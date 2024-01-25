@@ -1,1 +1,136 @@
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
 
+}
+
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+}
+
+
+.chat-container {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  color: #010213;
+  padding: 15px;
+}
+
+.chat-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  /* Remove underline from links */
+  color: inherit;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+#button-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.button {
+  flex-grow: 1;
+  /* Equal flex distribution */
+  padding: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3498db;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*Sets photo grid layout with gaps */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #0b0404;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/*inital blur*/
+.blurred {
+  filter: blur(8px);
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.subscribe-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
