@@ -1,1 +1,195 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Labrador Website</title>
+
+</head>
+
+<body>
+
+  <header>
+    <!-- Logo -->
+    <img
+      src="data:image/png;base64,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"
+      alt="Labrador Icon" class="header-icon">
+    <h1>onlyLabs</h1>
+
+  </header>
+
+
+  <div id="button-container">
+    <a href="#" class="button"> BLACK LABRADORS</a>
+    <a href="#" class="button"> BROWN LABRADORS</a>
+    <a href="#" class="button"> WHITE LABRADORS</a>
+  </div>
+
+  <div class="gallery">
+    <!-- Photo 1 -->
+    <div class="photo" id="photo1">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/labrador-royalty-free-image-1597496746.jpg" alt="Labrador 1"
+        class="blurred">
+      <div class="image-text">
+        <p>Henry</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo1')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="photo" id="photo2">
+      <img src="https://k9uchicago.com/wp-content/uploads/2021/01/why-are-labrador-retrievers_popular.jpg.webp"
+        alt="Labrador 2" class="blurred">
+      <div class="image-text">
+        <p>Sammmy and Joe</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo2')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="photo" id="photo3">
+      <img
+        src="https://www.treehugger.com/thmb/qXFux3GMMkSrCOI-OKLkL7Blgt0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/working-labs-501135793-48bc5f56fabc4725a67a294891f54a46.jpg"
+        alt="Labrador 3" class="blurred">
+      <div class="image-text">
+        <p>Ed, Edd n Eddy</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo3')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 4 -->
+    <div class="photo" id="photo4">
+      <img
+        src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/18/3200x2400/sd-aspect-1462454304-gettyimages-485952777.jpg?resize=1200:*"
+        alt="Labrador 4" class="blurred">
+      <div class="image-text">
+        <p>Willy Wonka</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo4')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 5 -->
+    <div class="photo" id="photo5">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5SvfE5QtvYRMVizOSET2IExybntiP5Z85w&usqp=CAU"
+        alt="Labrador 5" class="blurred">
+      <div class="image-text">
+        <p>Plenty</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo5')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 6 -->
+    <div class="photo" id="photo6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3dYCq0W1hyd0gGOpR6bQ7P2QEgQ3KRH8hw&usqp=CAU"
+        alt="Labrador 6" class="blurred">
+      <div class="image-text">
+        <p>Bashful</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo6')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 7 -->
+    <div class="photo" id="photo7">
+      <img src="https://livingwithlabradors.com/wp-content/uploads/2023/06/Yellow-and-Black-Labradors-scaled.jpg"
+        alt="Labrador 7" class="blurred">
+      <div class="image-text">
+        <p>Drake and Josh</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo7')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 8 -->
+    <div class="photo" id="photo8">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTda7d_4faD14FBltcA0uou960R0Qf9R7fbLpholXb_Jgo8UECWL-C4czgxkTjxzkXge00&usqp=CAU"
+        alt="Labrador 8" class="blurred">
+      <div class="image-text">
+        <p>Bunches</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo8')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 9 -->
+    <div class="photo" id="photo9">
+      <img src="https://pinpaws.com/wp-content/uploads/2019/08/labs_750x410.jpg" alt="Labrador 9" class="blurred">
+      <div class="image-text">
+        <p>GoodFellas</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo9')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 10 -->
+    <div class="photo" id="photo10">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-UmCcVeSlhVrsCqhauKTKkY9Kwelnk9FnvQ&usqp=CAU"
+        alt="Labrador 10" class="blurred">
+      <div class="image-text">
+        <p>Tinman</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo10')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 11 -->
+    <div class="photo" id="photo11">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQqbE_jAyV5JBZsINDbh2ODPT98PbMxr5Ew&usqp=CAU"
+        alt="Labrador 11" class="blurred">
+      <div class="image-text">
+        <p>Tony n Tiger</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo11')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 12 -->
+    <div class="photo" id="photo12">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGCzzvaP_Va136Fn56rQG0q3Crm35u9nS4mY8SSUdLxnKCDI9CK5orCmRq0Nd1KKuA6E&usqp=CAU"
+        alt="Labrador 12" class="blurred">
+      <div class="image-text">
+        <p>Cream Puff</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo12')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 13 -->
+    <div class="photo" id="photo13">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnKvIfxRGbKOIX9VItcCZOv85mzz5vu83KiA-FBts6Mtcv4Ca6HeqEV31o5cpRhbQiI8&usqp=CAU"
+        alt="Labrador 13" class="blurred">
+      <div class="image-text">
+        <p>Zeus</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo13')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 14 -->
+    <div class="photo" id="photo14">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyojEp7bJ90V4S-v8yflbFiJMgzxI4QQLJ-w&usqp=CAU"
+        alt="Labrador 14" class="blurred">
+      <div class="image-text">
+        <p>Yakult</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo14')">Subscribe for $4.20/month</button>
+    </div>
+
+    <!-- Photo 15 -->
+    <div class="photo" id="photo15">
+      <img src="https://pinpaws.com/wp-content/uploads/2019/08/labs_750x410.jpg" alt="Labrador 15" class="blurred">
+      <div class="image-text">
+        <p>The Addams</p>
+      </div>
+      <button class="subscribe-button" onclick="toggleBlur('photo15')">Subscribe for $4.20/month</button>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <a href="#" class="chat-box">
+      <p>Need Help? Click here</p>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
